@@ -42,7 +42,12 @@ Devise.setup do |config|
   config.omniauth :google_oauth2,
                   Rails.application.credentials.google[:client_id],
                   Rails.application.credentials.google[:client_secret]
-  # config.omniauth :github, ENV[‘GITHUB_APP_ID’], ENV[‘GITHUB_APP_SECRET’]
+  config.omniauth :github,
+                  Rails.application.credentials.github[:client_id],
+                  Rails.application.credentials.github[:client_secret]
+  config.omniauth :linkedin,
+                  Rails.application.credentials.linkedin[:client_id],
+                  Rails.application.credentials.linkedin[:client_secret]
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
@@ -269,7 +274,7 @@ Devise.setup do |config|
   # should add them to the navigational formats lists.
   #
   # The "*/*" below is required to match Internet Explorer requests.
-  # config.navigational_formats = ['*/*', :html, :turbo_stream]
+  config.navigational_formats = ['*/*', :html, :turbo_stream]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete

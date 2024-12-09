@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root "pages#home"
 
+  # For production remember to add the production callback url to Github, Google, LinkedIn dev oauth settings.
+
   # omniauth callback is the route that the provider will redirect to after the user has authenticated
   devise_for :users, controllers: {
     registrations: "users/registrations",

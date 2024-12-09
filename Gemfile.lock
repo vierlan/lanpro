@@ -212,8 +212,15 @@ GEM
       hashie (>= 3.4.6)
       rack (>= 2.2.3)
       rack-protection
+    omniauth-github (2.0.1)
+      omniauth (~> 2.0)
+      omniauth-oauth2 (~> 1.8)
     omniauth-google-oauth2 (1.2.0)
       jwt (>= 2.9)
+      oauth2 (~> 2.0)
+      omniauth (~> 2.0)
+      omniauth-oauth2 (~> 1.8)
+    omniauth-linkedin-openid (1.0.2)
       oauth2 (~> 2.0)
       omniauth (~> 2.0)
       omniauth-oauth2 (~> 1.8)
@@ -418,7 +425,9 @@ DEPENDENCIES
   jbuilder
   kamal
   omniauth
+  omniauth-github (~> 2.0.0)
   omniauth-google-oauth2
+  omniauth-linkedin-openid
   omniauth-rails_csrf_protection
   pg (~> 1.1)
   propshaft
