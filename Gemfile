@@ -43,8 +43,8 @@ gem "thruster", require: false
 # gems added for omnioauth
 gem "omniauth"
 gem "omniauth-google-oauth2"
-gem 'omniauth-github', '~> 2.0.0'
-gem 'omniauth-linkedin-openid'
+gem "omniauth-github", "~> 2.0.0"
+gem "omniauth-linkedin-openid"
 gem "omniauth-rails_csrf_protection"
 
 # gem added for devise

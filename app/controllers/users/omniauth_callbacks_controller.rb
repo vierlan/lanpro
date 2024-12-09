@@ -32,7 +32,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       flash[:alert] = t "devise.omniauth_callbacks.failure", kind: "LinkedIn", reason: "#{auth.info.email} is not authorized."
       redirect_to new_user_session_path
     end
-
   end
 
   def github
@@ -48,7 +47,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
 
-  
+
 
 
   # More info at:
